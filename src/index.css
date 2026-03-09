@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+    --bg-primary: #050509;
+    /* Deep space black */
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+    --accent: #00d4ff;
+    /* Neon cyan */
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+
+/* === Moving Stars Background Animation === */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image:
+        radial-gradient(4px 4px at 20px 30px, #ffffff99, transparent),
+        radial-gradient(3px 3px at 80px 120px, #ffffff77, transparent),
+        radial-gradient(3px 3px at 200px 80px, #ffffff55, transparent),
+        radial-gradient(4px 4px at 400px 200px, #ffffff66, transparent),
+        radial-gradient(3px 3px at 600px 400px, #ffffff44, transparent),
+        radial-gradient(5px 5px at 150px 350px, #ffffffaa, transparent),
+        radial-gradient(3px 3px at 250px 150px, #ffffff77, transparent),
+        radial-gradient(3px 3px at 300px 250px, #ffffff55, transparent),
+        radial-gradient(4px 4px at 500px 100px, #ffffff66, transparent),
+        radial-gradient(3px 3px at 80px 300px, #ffffff44, transparent),
+        radial-gradient(3px 3px at 450px 350px, #ffffff88, transparent),
+        radial-gradient(4px 4px at 350px 50px, #ffffff99, transparent),
+        radial-gradient(3px 3px at 550px 250px, #ffffff55, transparent),
+        radial-gradient(3.5px 3.5px at 100px 50px, #ffffff88, transparent),
+        radial-gradient(3px 3px at 50px 250px, #ffffff66, transparent),
+        radial-gradient(4px 4px at 120px 400px, #ffffff99, transparent),
+        radial-gradient(3px 3px at 320px 180px, #ffffff77, transparent),
+        radial-gradient(3px 3px at 420px 280px, #ffffff55, transparent),
+        radial-gradient(5px 5px at 580px 120px, #ffffffaa, transparent),
+        radial-gradient(3px 3px at 20px 380px, #ffffff44, transparent),
+        radial-gradient(3px 3px at 480px 380px, #ffffff88, transparent),
+        radial-gradient(4px 4px at 280px 80px, #ffffff99, transparent),
+        radial-gradient(3px 3px at 520px 280px, #ffffff55, transparent),
+        radial-gradient(3.5px 3.5px at 150px 80px, #ffffff88, transparent),
+        radial-gradient(3px 3px at 80px 280px, #ffffff66, transparent);
+    background-size: 400px 400px;
+    background-repeat: repeat;
+    animation: moveStars 80s linear infinite;
+    z-index: -2;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+@keyframes moveStars {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -1000px 1000px;
+    }
+}
+
+/* === UI Components based on original site.css === */
+
+.btn-primary-glow {
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 12px;
+    background: transparent;
+    color: #ffffff;
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-primary-glow:hover {
+    background: rgba(0, 212, 255, 0.15);
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
+    color: var(--accent);
+}
+
+.frosted-card {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.frosted-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 50px rgba(0, 212, 255, 0.3);
+}
+
+.spark-icon {
+    color: #ffffff;
+    animation: sparkle 2s infinite alternate;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+@keyframes sparkle {
+    from {
+        opacity: 0.6;
+        text-shadow: 0 0 6px #ffffff;
+    }
+
+    to {
+        opacity: 1;
+        text-shadow: 0 0 15px #ffffff;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
