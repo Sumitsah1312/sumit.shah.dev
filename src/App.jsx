@@ -30,7 +30,7 @@ function HomeContent() {
 function App() {
     return (
         <Router>
-            <div className="app w-full min-h-screen bg-[#05060a] overflow-x-hidden">
+            <div className="app w-full min-h-screen overflow-x-hidden">
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<HomeContent />} />
