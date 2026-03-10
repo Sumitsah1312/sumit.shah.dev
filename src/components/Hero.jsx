@@ -26,7 +26,7 @@ const Hero = () => {
                             Hi, I'm <span className="text-[#00d4ff] drop-shadow-[0_0_30px_rgba(0,212,255,0.9)]">Sumit Shah</span>
                         </h1>
                         <p style={{ padding: "13px" }} className="text-xl md:text-[1.4rem] text-[#e0e0e0] mb-8">
-                            .NET Developer • 3D Innovator
+                            .NET Developer
                         </p>
 
                         <div style={{ padding: "13px" }} className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

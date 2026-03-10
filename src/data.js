@@ -99,7 +99,7 @@ export const PROJECTS = [
         ],
         tech: ["ASP.NET MVC", "JavaScript", "jQuery", "PostgreSQL"],
         github: "",
-        live: ""
+        live: "https://fbsys.zamitqai.com/Feedback/#/home?ctid=y78RtER%2FGSI%3D"
     },
     {
         id: 5,
