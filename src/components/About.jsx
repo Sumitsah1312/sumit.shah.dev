@@ -66,7 +66,7 @@ const About = () => {
                             This mindset reflects in my work, where I continuously learn, build, and push boundaries.
                         </p>
 
-                        <p className="text-sm sm:text-base text-gray-400 px-2 sm:px-3 md:px-4 mt-2">
+                        <p style={{marginTop:"25px"}} className="text-sm sm:text-base text-gray-400 px-2 sm:px-3 md:px-4 mt-2">
                             Currently open to backend opportunities where I can contribute to scalable systems and grow as an engineer.
                         </p>
 
