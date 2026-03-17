@@ -11,42 +11,42 @@ export const PROFILE = {
 
 export const SKILLS = {
     Backend: [
+        "ASP.NET Core",
         "ASP.NET Core MVC",
         "ASP.NET Core Web API",
         "C#",
-        ".NET Core",
-        "Entity Framework Core",
         "LINQ",
-        "Identity & Role Management",
-        "JWT Authentication",
-        "OTP Authentication Systems",
+        "Entity Framework Core",
+        "Authentication (JWT, Identity)",
+        "REST API Development",
         "Repository & Service Patterns"
     ],
     Database: [
         "PostgreSQL (Npgsql)",
         "Relational Database Design",
-        "Query Optimization"
+        "Query Optimization",
+        "Joins"
     ],
     Frontend: [
-        "HTML5",
-        "CSS3",
+        "HTML",
+        "CSS",
+        "Javascript",
         "Bootstrap",
         "jQuery",
         "React",
-        "AJAX",
         "Dynamic Form Handling & Validations"
     ],
-    "Integrations & Features": [
-        "Email Sending (SMTP)",
-        "Barcode Generation (ZXing/iTextSharp)",
-        "PDF Generation",
-        "File Upload Handling",
-        "External API Integration"
+    "Core Concepts": [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming (OOPs)",
+        "Database Management Systems (DBMS)",
+        "Operating System (OS)"
     ],
     Tools: [
         "Git & GitHub",
         "Postman",
-        "Visual Studio"
+        "VS Code",
+        "Familiar with Microservices Architecture & Docker"
     ]
 };
 export const PROJECTS = [
@@ -55,7 +55,7 @@ export const PROJECTS = [
         title: "Hospital Management System",
         image: "/images/projects/project_hospital_api.png",
         description:
-            "Designed and implemented secure REST APIs using .NET for patient authentication, OTP verification, and medical record management. Implemented role-based access control where Super Admin manages hospitals, departments, doctors, and patients with patient-to-doctor assignment functionality.",
+            "Designed and developed a scalable backend using Clean Architecture, ensuring separation of concerns and maintainability. Implemented JWT-based authentication and role-based authorization for secure access control across multiple user roles (Admin, Doctor, Patient). Built RESTful APIs to manage patient records, doctor scheduling, and appointment workflows. Optimized database queries and improved performance for handling real-time hospital operations.",
         features: [
             "JWT authentication",
             "Role-based access control",
@@ -63,7 +63,7 @@ export const PROJECTS = [
             "Modular API architecture",
             "Validation and error handling"
         ],
-        tech: ["ASP.NET Web API", "JWT", "C#", "PostgreSQL"],
+        tech: [".NET Web API", "JWT", "C#", "PostgreSQL"],
         github: "https://github.com/Sumitsah1312/HMS",
         live: "https://managehos.netlify.app/"
     },
@@ -87,10 +87,10 @@ export const PROJECTS = [
 
     {
         id: 3,
-        title: "Feedback System (Admin Portal)",
+        title: "Feedback System",
         image: "/images/projects/project_survey_system.png",
         description:
-            "Built an admin portal for creating dynamic feedback forms where administrators can add questions of different types and track response submissions.",
+            "Built dynamic form builder supporting multiple question types. Implemented response capturing and analytics dashboard for administrators. Designed end-to-end module from UI to backend logic.",
         features: [
             "Dynamic question builder",
             "Multiple question types",
@@ -106,7 +106,7 @@ export const PROJECTS = [
         title: "Microloan Application",
         image: "/images/projects/project_microloan.png",
         description:
-            "Worked on the user module of a microloan platform where users can apply for loans, manage loan details, and access a personalized dashboard.",
+            "Developed secure backend APIs for loan application, dashboard, and loan management. Implemented business logic for loan processing and user data handling. Ensured data security and validation for financial workflows.",
         features: [
             "Loan application workflow",
             "User dashboard",

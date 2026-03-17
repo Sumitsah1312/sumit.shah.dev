@@ -6,7 +6,7 @@ const categoryIcons = {
     "Backend": <Server className="w-10 h-10 text-[#00d4ff] group-hover:scale-110 transition-transform duration-500" />,
     "Database": <Database className="w-10 h-10 text-[#00d4ff] group-hover:scale-110 transition-transform duration-500" />,
     "Frontend": <Layout className="w-10 h-10 text-[#00d4ff] group-hover:scale-110 transition-transform duration-500" />,
-    "Integrations & Features": <Plug className="w-10 h-10 text-[#00d4ff] group-hover:scale-110 transition-transform duration-500" />,
+    "Core Concepts": <Plug className="w-10 h-10 text-[#00d4ff] group-hover:scale-110 transition-transform duration-500" />,
     "Tools": <Wrench className="w-10 h-10 text-[#00d4ff] group-hover:scale-110 transition-transform duration-500" />
 };
 
@@ -47,7 +47,7 @@ const TechStack = () => {
                         className="inline-flex items-center gap-3 bg-[#00d4ff]/10 border border-[#00d4ff]/30 text-[#00d4ff] px-5 py-2 rounded-full font-semibold tracking-widest uppercase   backdrop-blur-md shadow-[0_0_20px_rgba(0,212,255,0.2)] mb-6"
                     >
                         <Cpu className="w-4 h-4 animate-pulse" />
-                        <span>System Architecture</span>
+                        <span>Technical Skills</span>
                     </motion.div>
 
                 </div>

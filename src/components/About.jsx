@@ -56,16 +56,18 @@ const About = () => {
                     <div className="text-center text-[#f5f5f5] leading-[1.7] mx-auto px-5 drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">
 
                         <p style={{ paddingBottom: "30px" }} className="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 px-2 sm:px-3 md:px-4">
-                            I'm <strong>Sumit</strong>, a <strong>.NET Developer</strong> who loves turning ideas into interactive,
-                            meaningful digital experiences.
-                            With 1–2 years of experience navigating both <strong>frontend and backend realms</strong>, I craft systems
-                            where <em className="italic">logic dances with design and performance meets elegance</em>.
+                            I'm <strong>Sumit</strong>, a .NET Backend Developer with 1.5+ years of experience building scalable and secure Web APIs using ASP.NET Core and PostgreSQL.
+                            I specialize in designing robust backend systems, implementing JWT-based authentication, and optimizing performance for real-world applications.
+                            I enjoy solving complex problems and turning ideas into efficient, production-ready solutions.
                         </p>
 
                         <p className="text-base sm:text-lg md:text-xl lg:text-2xl italic text-[#ddd] px-2 sm:px-3 md:px-4">
-                            Beyond the screen, I find inspiration in <strong>cooking and reading</strong>, where creativity takes a
-                            different form — experimenting with flavors and stories that spark new perspectives.
-                            Every project I build carries a bit of that curiosity and passion for exploring the unknown.
+                            Beyond code, I explore creativity through <strong>cooking and reading</strong> — where experimenting with flavors and ideas keeps my curiosity alive.
+                            This mindset reflects in my work, where I continuously learn, build, and push boundaries.
+                        </p>
+
+                        <p className="text-sm sm:text-base text-gray-400 px-2 sm:px-3 md:px-4 mt-2">
+                            Currently open to backend opportunities where I can contribute to scalable systems and grow as an engineer.
                         </p>
 
                     </div>
